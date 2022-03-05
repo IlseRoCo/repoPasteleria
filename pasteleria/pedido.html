@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.9">
+    <title>Pastelicello</title>
+    <style></style>
+</head>
+<body>
+    <!--Logo-->
+    <a href="./menuPasteleria.html">
+        <img src="./imag/Pastelicello_Logo.png" alt="Logo Pastelicello" width="250px" >
+    </a>
+    <br>
+
+    <!--Headings-->
+    <h1>Realiza tu pedido</h1>
+    <h3>Por favor, ingresa los datos solicitados a continuación:</h3>
+
+    <form action="./historial.html"> <!--pedido.js-->
+        <label for="Nombre">Ingresa tu nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Pastelicello Sánchez">
+        <br><br>
+        <label for="Teléfono">Ingresa tu teléfono:</label>
+        <input type="text" id="tel" name="tel" placeholder="5516656460">
+        <br><br>
+        <label for="Email">Ingresa tu correo electrónico:</label>
+        <input type="text" id="Email" name="Email" placeholder="pastelicello@mail.com">
+        <br>
+        <h4>Ingresa los datos de tu pastel:</h4>
+        <label for="Forma">Indica la forma:</label>
+        <select name="forma" id="forma">
+            <option value="Selecciona">Selecciona</option>
+            <option value="Redondo">Redondo</option>
+            <option value="Rectangular">Rectangular</option>
+        </select>
+        &nbsp;
+        <label for="Tamano">Indica el tamaño:</label>
+        <select name="tamano" id="tamano">
+            <option value="Selecciona">Selecciona</option>
+            <option value="ch">Chico</option>
+            <option value="md">Mediano</option>
+            <option value="gd">Grande</option>
+        </select>
+        <br><br>
+        <label for="SaborPan">Indica el sabor del pan:</label>
+        <select name="SaborPan" id="SaborPan">
+            <option value="Selecciona">Selecciona</option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Almendra">Almendra</option>
+            <option value="Nuez">Nuez</option>
+            <option value="Naranja">Naranja</option>
+        </select>
+        &nbsp;
+        <label for="TipoPan">Indica el tipo de pan:</label>
+        <select name="TipoPan" id="TipoPan">
+            <option value="Selecciona">Selecciona</option>
+            <option value="Normal">Normal</option>
+            <option value="Tres leches">Tres leches</option>
+        </select>
+        <br><br>
+        <p>Indica el relleno (puedes elegir 2 opciones):</p>
+        <p>* Sencillo.................................(+) CH $20, MD $40, GD $60</p>
+        <input type="checkbox" id="relleno1" name="relleno1" value="Mermelada de zarzamora">
+		<label for="relleno1">Mermelada de zarzamora</label><br>
+        <input type="checkbox" id="relleno2" name="relleno2" value="Mermelada de piña">
+		<label for="relleno2">Mermelada de piña</label><br>
+        <input type="checkbox" id="relleno3" name="relleno3" value="Mermelada de fresa">
+		<label for="relleno3">Mermelada de fresa</label><br>
+        <input type="checkbox" id="relleno4" name="relleno4" value="Crema pastelera de vainilla">
+		<label for="relleno4">Crema pastelera de vainilla</label><br>
+        <input type="checkbox" id="relleno5" name="relleno5" value="Fruta (fresa/durazno)">
+        <label for="relleno5">Fruta (fresa/durazno)</label><br>
+        
+        <p>* Especial.............................(+) CH $30, MD $50, GD $80</p>
+        <input type="checkbox" id="relleno6" name="relleno6" value="Crema de avellanas">
+		<label for="relleno6">Crema de avellanas</label><br>
+        <input type="checkbox" id="relleno7" name="relleno7" value="Flan de queso">
+		<label for="relleno7">Flan de queso</label><br>
+        <input type="checkbox" id="relleno8" name="relleno8" value="Crema de chocolate">
+		<label for="relleno8">Crema de chocolate</label><br>
+        <input type="checkbox" id="relleno9" name="relleno9" value="Dulce de leche">
+		<label for="relleno9">Dulce de leche</label><br>
+        <input type="checkbox" id="relleno10" name="relleno10" value="Nuez">
+		<label for="relleno10">Nuez</label>
+        <br><br>
+        <label for="Cubierta">Indica la cubierta (puedes elegir solo 1 opción):</label>
+        <p>* Sencillo.................................(+) CH $20, MD $40, GD $60</p>
+        <input type="checkbox" id="toping1" name="toping1" value="Crema pastelera">
+		<label for="toping1">Crema pastelera</label><br>
+        <input type="checkbox" id="toping2" name="toping2" value="Crema chantilly">
+		<label for="toping2">Crema chantilly</label><br>
+        <input type="checkbox" id="toping3" name="toping3" value="Crema de chocolate">
+		<label for="toping3">Crema de chocolate</label><br>
+        
+        <p>* Especial.............................(+) CH $30, MD $50, GD $80</p>
+        <input type="checkbox" id="toping6" name="toping6" value="Fondant">
+		<label for="toping6">Fondant</label><br>
+        <input type="checkbox" id="toping7" name="toping7" value="Crema de mantequilla">
+		<label for="toping7">Crema de mantequilla</label><br>
+        <br>
+        <p>Indica los toppings para decoración (puedes elegir 2 opciones):</p>
+        <p>* Sencillos (+) CH $20, MD $40, GD $60</p>
+        <p>* Especial (+) CH $30, MD $50, GD $80</p>
+        <br>
+        <label for="Topping1">Indica el sabor del Topping1:</label>
+        <select name="Topping1" id="Topping1">
+            <option value="Topping1">Topping1</option>
+            <option value="Crema de chocolate">Crema de chocolate</option>
+            <option value="Mermelada de zarzamora">Mermelada de zarzamora</option>
+            <option value="Mermelada de piña">Mermelada de piña</option>
+            <option value="Mermelada de fresa">Mermelada de fresa</option>
+            <option value="Jarabe de chocolate">Jarabe de chocolate</option>
+            <option value="Frutas de temporada">Frutas de temporada (Especial)</option>
+            <option value="Dulce de leche">Dulce de leche (Especial)</option>
+            <option value="Granillo de chocolate o de colores">Granillo de chocolate o de colores (Especial)</option>
+            <option value="Fotografía impresa en oblea">Fotografía impresa en oblea (Especial)</option>
+            <option value="Figura de fondant">Figura de fondant (Especial)</option>   
+        </select>
+        &nbsp;
+        <label for="Topping2">Indica el toping2:</label>
+        <select name="Topping2" id="Topping2">
+            <option value="Topping2">Topping2</option>
+            <option value="Crema de chocolate">Crema de chocolate</option>
+            <option value="Mermelada de zarzamora">Mermelada de zarzamora</option>
+            <option value="Mermelada de piña">Mermelada de piña</option>
+            <option value="Mermelada de fresa">Mermelada de fresa</option>
+            <option value="Jarabe de chocolate">Jarabe de chocolate</option>
+            <option value="Frutas de temporada">Frutas de temporada (Especial)</option>
+            <option value="Dulce de leche">Dulce de leche (Especial)</option>
+            <option value="Granillo de chocolate o de colores">Granillo de chocolate o de colores (Especial)</option>
+            <option value="Fotografía impresa en oblea">Fotografía impresa en oblea (Especial)</option>
+            <option value="Figura de fondant">Figura de fondant (Especial)</option>            
+        </select>
+       
+      
+        <br><br>
+        <p>Indica la fecha de entrega de tu pastel, considera los días de anticipación:</p>
+        <ol>
+            <li>CH: 1 a 2 días antes</li>
+            <li>MD: 2 a 3 días antes</li>
+            <li>GD: 3 a 5 días antes</li>
+        </ol>
+        <label for="FecEnt">Fecha de entrega:</label>
+        <input type="text" id="FecEnt" name="FecEnt" placeholder="15/05/2022">
+        <p>Todas las entregas se realizan entre las 10:00h y las 16:00h. Aplican restricciones para fines de semana.</p>
+        <br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+    </form>
+    <br><br>
+    <footer>
+        <h5>Pastelería Pastelicello<br>
+        Dirección: Fernando Iglesias Calderón 78, Jardín Balbuena, Venustiano Carranza, 15900, Ciudad de México. <br>
+        Teléfono: 555-589-4557 <br>
+        Horarios de atención: Lunes a sábado, de 10:00h a 19:00h.
+        </h5>
+        <h6>Creado por: Ilse Romero Cordero. 2022</h6>
+    </footer>    
+</body>
+</html>
